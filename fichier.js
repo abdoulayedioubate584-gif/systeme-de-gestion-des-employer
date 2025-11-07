@@ -450,3 +450,4 @@ function closeConfirm() {
   modal.setAttribute('aria-hidden', 'true');
   window.__confirmCallback = null;
 }
+window.isDemo = true;
