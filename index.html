@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des Employés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>👨🏽‍💻 Système de Gestion des Employés 👩🏽‍💼</h1>
+
+  <form id="formEmploye">
+    <input type="text" id="nom" placeholder="Nom" required>
+    <input type="number" id="age" placeholder="Âge" required>
+    <input type="number" id="salaire" placeholder="Salaire de base" required>
+    
+    <select id="role">
+      <option value="Developpeur">Développeur</option>
+      <option value="Manager">Manager</option>
+      <option value="Directeur">Directeur</option>
+    </select>
+
+    <input type="text" id="extra" placeholder="Langage / Équipe / Département" required>
+    <button type="submit">Ajouter</button>
+  </form>
+
+  <!-- Zone pour afficher messages d'erreur / succès -->
+  <div id="message" aria-live="polite"></div>
+
+  <!-- Toolbar: import/export/clear -->
+  <div id="toolbar" style="margin-bottom:12px; display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+    <button id="btnExportJSON">Exporter JSON</button>
+    <button id="btnExportCSV">Exporter CSV</button>
+    <label for="inputImportFile" style="margin:0">
+      <input type="file" id="inputImportFile" accept=".json,.csv" style="display:none">
+      <button id="btnImport">Importer</button>
+    </label>
+    <button id="btnExportSample">Télécharger sample</button>
+    <button id="btnClearAll">Tout supprimer</button>
+    <!-- Filtre rôle -->
+    <select id="filterRole" style="margin-left:6px; padding:8px;">
+      <option value="">Tous les rôles</option>
+      <option value="Developpeur">Développeur</option>
+      <option value="Manager">Manager</option>
+      <option value="Directeur">Directeur</option>
+    </select>
+  </div>
+
+  <input type="text" id="recherche" placeholder="🔍 Rechercher un employé par nom">
+  <button onclick="rechercherEmploye()">Rechercher</button>
+  <button onclick="afficherListeEmployes()">Réinitialiser</button>
+
+  <div id="listeEmployes"></div>
+
+  <!-- Confirmation modal -->
+  <div id="confirmModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <p id="confirmText">Confirmer ?</p>
+      <div class="modal-actions">
+        <button id="confirmYes">Confirmer</button>
+        <button id="confirmNo">Annuler</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="fichier.js"></script>
+</body>
+</html>

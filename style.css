@@ -1,0 +1,182 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0078D4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#listeEmployes {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Message (validation / confirmation) */
+#message {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.msg-error {
+  background: #fff1f0;
+  color: #a50e0e;
+  border: 1px solid #f5c2c2;
+}
+
+.msg-success {
+  background: #eefcf3;
+  color: #0b6623;
+  border: 1px solid #c7f0d0;
+}
+
+/* Styles pour le tableau des employés */
+#listeEmployes table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+#listeEmployes th,
+#listeEmployes td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e6eef6;
+  text-align: left;
+}
+
+#listeEmployes th {
+  background: #f7fbff;
+  color: #0366d6;
+  font-weight: 700;
+}
+
+#listeEmployes tr:hover td {
+  background: #f5faff;
+}
+
+.delete-btn {
+  background: #e81123;
+  color: #fff;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #b50f1b;
+}
+
+/* Responsive: permettre le scroll horizontal si l'écran est petit */
+#listeEmployes {
+  overflow-x: auto;
+}
+
+/* Toolbar buttons */
+#toolbar button,
+#toolbar label button {
+  padding: 8px 10px;
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#toolbar button:hover {
+  background: #084bb0;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  z-index: 9999;
+}
+
+.modal[aria-hidden="false"] { display: flex; }
+
+.modal-content {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  min-width: 280px;
+  max-width: 90%;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.modal-actions button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#confirmYes { background: #e81123; color: #fff; }
+#confirmNo { background: #f3f3f3; }
+
+/* Sortable header */
+th.sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+th.sortable::after {
+  content: '\25B2'; /* triangle up */
+  font-size: 10px;
+  opacity: 0.12;
+  margin-left: 6px;
+  transform: translateY(-1px);
+}
+
+th.sortable.sort-asc::after {
+  content: '\25B2';
+  opacity: 0.8;
+}
+
+th.sortable.sort-desc::after {
+  content: '\25BC';
+  opacity: 0.8;
+}

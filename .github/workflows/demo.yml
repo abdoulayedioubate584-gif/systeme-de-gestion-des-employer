@@ -1,0 +1,33 @@
+name: Build and Deploy Demo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install and Build Demo
+        run: |
+          mkdir demo
+          cp index.html demo/
+          cp fichier.js demo/
+          cp style.css demo/
+          echo "window.isDemo = true;" >> demo/fichier.js
+
+      - name: Deploy Demo to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: demo
+          clean: true
