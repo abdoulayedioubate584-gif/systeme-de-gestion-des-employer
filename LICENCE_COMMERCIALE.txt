@@ -1,0 +1,49 @@
+CONTRAT DE LICENCE UTILISATEUR FINAL
+ET CONDITIONS D'UTILISATION
+
+Entre :
+[Votre Nom/Société]
+ci-après dénommé "le Concédant"
+
+Et :
+L'utilisateur final du logiciel
+ci-après dénommé "le Licencié"
+
+1. OBJET
+Le présent contrat a pour objet de définir les conditions dans lesquelles le Concédant accorde au Licencié le droit d'utiliser le logiciel "Gestion des Employés" (ci-après "le Logiciel").
+
+2. LICENCE
+2.1 Le Concédant accorde au Licencié une licence non exclusive et non transférable d'utilisation du Logiciel.
+2.2 Cette licence permet au Licencié d'installer et d'utiliser le Logiciel sur un nombre illimité de postes au sein de son organisation.
+
+3. RESTRICTIONS
+Le Licencié s'engage à :
+- Ne pas modifier, décompiler ou désassembler le Logiciel
+- Ne pas vendre, louer ou transférer le Logiciel à des tiers
+- Ne pas supprimer les mentions de copyright et autres droits de propriété
+
+4. PROPRIÉTÉ INTELLECTUELLE
+4.1 Le Logiciel reste la propriété exclusive du Concédant.
+4.2 Le Licencié reconnaît que tous les droits de propriété intellectuelle restent acquis au Concédant.
+
+5. GARANTIE
+5.1 Le Logiciel est fourni "tel quel" sans garantie d'aucune sorte.
+5.2 Le Concédant ne garantit pas que le Logiciel fonctionnera sans interruption ni erreur.
+
+6. RESPONSABILITÉ
+6.1 En aucun cas le Concédant ne pourra être tenu responsable des dommages directs ou indirects.
+6.2 La responsabilité du Concédant est limitée au prix payé pour la licence.
+
+7. DURÉE
+7.1 La licence est accordée pour une durée indéterminée.
+7.2 Elle peut être résiliée par le Concédant en cas de non-respect des présentes conditions.
+
+8. LOI APPLICABLE
+Le présent contrat est régi par la loi [pays] et tout litige relèvera des tribunaux compétents de [ville].
+
+Fait à _____________, le _____________
+
+Le Licencié :                           Le Concédant :
+[Signature]                             [Signature]
+
+[Nom/Société]                           [Votre Nom/Société]
