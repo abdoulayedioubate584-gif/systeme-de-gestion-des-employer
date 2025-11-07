@@ -1,4 +1,0 @@
-[
-  { "nom": "Alice", "age": 30, "baseSalaire": 2000000, "role": "Developpeur", "extra": "JavaScript" },
-  { "nom": "Bob", "age": 40, "baseSalaire": 3000000, "role": "Manager", "extra": "Equipe A,Equipe B" }
-]
