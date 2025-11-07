@@ -1,0 +1,14 @@
+{
+  "name": "gestion-employes-frontend",
+  "version": "1.0.0",
+  "description": "Application front-end de gestion des employés (export/import JSON/CSV)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -c-1 -p 8080",
+    "lint": "echo \"No linter configured (run 'npm i -D eslint && npx eslint .')\"",
+    "test": "node ./scripts/run-tests.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}
